@@ -6,6 +6,11 @@
   <dt>ID</dt>
   <dd>{{contact.id}}</dd>
 
+  {% if contact.photo %}
+    <aside>
+      <img src="{{ contact.photo.url }}" style="max-width: 500px; height:auto; float:right"
+    </aside>
+  {% endif %}
   <dt>Código de Área</dt>
   <dd>{{contact.countrycode}}</dd>
 
