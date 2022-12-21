@@ -23,6 +23,7 @@ class Contacts(models.Model):
     description = models.TextField(blank=True)
     category = models.ForeignKey(Categories, on_delete=models.DO_NOTHING)
     hidecontact = models.BooleanField(default=True)
+    photo = models.ImageField(blank=True, upload_to='pictures/ %Y/%m
 
     def __str__(self):
         return self.name
